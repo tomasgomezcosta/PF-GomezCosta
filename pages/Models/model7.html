@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model 7 - Nocturne Candles</title>
+    <link rel="stylesheet" href="../../stylesheet/styles.css">
+</head>
+<body>
+    <header>
+        <section class="header-section">
+            <h1>
+                <a href="../../index.html" title="Ir al inicio">Nocturne Candles</a>
+            </h1>
+        </section>
+        <hr>
+        <nav>
+            <div>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    &#9776;
+                </button>
+                <ul class="nav-menu"> 
+                    <li><a href="../collections.html">colecciones</a></li>
+                    <li><a href="../models.html">modelos</a></li>
+                    <li><a href="../fragances.html">fragancias</a></li>
+                    <li><a href="../accesories.html">accesorios</a></li>
+                    <li><a href="../aboutus.html">nosotros</a></li>
+                </ul>
+            </div>
+            <div>
+                <form class="search-form" action="">
+                    <button type="button" class="search-toggle" aria-label="Buscar">
+                        <!-- Icono buscar -->
+                        <svg class="icon-search" viewBox="0 0 24 24" title="Buscar">
+                            <circle cx="12" cy="12" r="8"/>
+                            <line x1="18" y1="18" x2="22" y2="22"/>
+                        </svg>
+                    </button>
+                    <input type="text" class="search-input" placeholder="Buscar" />
+                </form>
+            </div>
+            <div>
+                <ul class="nav-account">
+                    <li>
+                        <a href="../account.html" aria-label="Cuenta">
+                            <!-- Icono usuario -->
+                            <svg width="28" height="28" fill="none" stroke="#222831" stroke-width="2" viewBox="0 0 24 24" title="Cuenta">
+                                <circle cx="12" cy="8" r="4"/>
+                                <path d="M4 20c0-4 8-4 8-4s8 0 8 4"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../cart.html" aria-label="Carrito">
+                            <!-- Icono carrito -->
+                            <svg width="28" height="28" fill="none" stroke="#222831" stroke-width="2" viewBox="0 0 24 24" title="Carrito">
+                                <circle cx="9" cy="21" r="1"/>
+                                <circle cx="20" cy="21" r="1"/>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61l1.6-8.39H6"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <section class="headings">
+            <h2>Model 7</h2>
+        </section>
+        <hr>
+        <section class="model">
+            <div class="models-detail">
+                <img src="../../ext/model7.png" alt="Model 7" style="max-width:350px;width:100%;border-radius:8px;">
+                <div class="model-info">
+                    <h3>Nombre del Modelo 7</h3>
+                    <p>
+                        Descripción de las características, materiales, fragancias disponibles, y cualquier detalle relevante para el modelo 7.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>tiendas</h3>
+                <ul>
+                    <li><a href="#">Olivos</a></li>
+                    <li><a href="#">San Isidro</a></li>
+                    <li><a href="#">Belgrano</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>productos</h3>
+                <ul>
+                    <li><a href="../models.html">Modelos</a></li>
+                    <li><a href="../fragances.html">Fragancias</a></li>
+                    <li><a href="../accesories.html">Accesorios</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>contacto</h3>
+                <ul>
+                    <li><a href="https://www.whatsapp.com/join?lang=es_LA&dept=online%2F" target="_blank">WhatsApp</a></li>
+                    <li><a href="#">Mail</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 Nocturne Candles Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    // Abrir/cerrar con el botón
+    navToggle.addEventListener('click', function(e) {
+        navMenu.classList.toggle('active');
+        e.stopPropagation();
+    });
+
+    // Cerrar al salir con el mouse
+    navMenu.addEventListener('mouseleave', function() {
+        navMenu.classList.remove('active');
+    });
+
+    // Cerrar al hacer click fuera del menú
+    document.addEventListener('click', function(e) {
+        if (navMenu.classList.contains('active')) {
+            // Si el click NO es dentro del menú ni en el botón
+            if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+            }
+        }
+    });
+
+    const searchForm = document.querySelector('.search-form');
+    const searchToggle = document.querySelector('.search-toggle');
+    const searchInput = document.querySelector('.search-input');
+
+    searchToggle.addEventListener('click', () => {
+        searchForm.classList.toggle('active');
+        if (searchForm.classList.contains('active')) {
+            searchInput.focus();
+        }
+    });
+
+    // Opcional: cerrar el campo si se hace click fuera
+    document.addEventListener('click', (e) => {
+        if (!searchForm.contains(e.target)) {
+            searchForm.classList.remove('active');
+        }
+    });
+    </script>
+</body>
+</html>
