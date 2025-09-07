@@ -1,0 +1,17 @@
+// Index Main
+
+.main-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section-headings {
+  background-color: $color-bg-light;
+  text-decoration: none;
+
+  h2 {
+    @include h2($color-text-main, $font-size-h2, 400, center, 0.4rem, uppercase, $padding-section-h2);
+  }
+}
+

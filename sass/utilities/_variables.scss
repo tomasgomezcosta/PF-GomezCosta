@@ -1,0 +1,39 @@
+// Tipografía principal
+$font-main: 'Tenor Sans', sans-serif;
+
+// Colores principales de uso frecuente
+$color-bg-dark: #222831;
+$color-bg-medium: #393E46;
+$color-bg-light: #9f9587;
+$color-bg-light-transparent: #9f958794;
+$color-bg-hr: #75787E;
+$color-bg-input: #e5e5e5;
+
+$color-text-main: #d9d9d9;
+$color-text-dark: #222831;
+$color-text-light: #ffffff;
+$color-text-accent: #9f9587;
+$color-text-secondary: #393e46da;
+
+// Border radius y sombras
+$border-radius-main: 0.55rem;
+$box-shadow-main: 1px 2px 8px #222831;
+
+// Espaciados y tamaños globales
+$padding-section: 2.5rem;
+$padding-section-h2: 1.2rem;
+$padding-card: 1rem;
+$gap-main: 1rem;
+
+// Altura de hr
+$hr-height: 0.3rem;
+
+// Tamaños de fuente base
+$font-size-h1: 4.375rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.5rem;
+$font-size-base: 1rem;
+
+// Breakpoints (ejemplo)
+$breakpoint-tablet: 1024px;
+$breakpoint-mobile: 450px;

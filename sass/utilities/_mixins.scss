@@ -1,0 +1,102 @@
+// Mixins reutilizables y optimizados
+
+// Flexbox rápido
+@mixin flex($direction: row, $justify: center, $align: center, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+// Grid rápido
+@mixin grid($columns: 1fr, $gap: 2.5rem, $justify: space-between, $align: center ) {
+  display: grid;
+  grid-template-columns: $columns;
+  gap: $gap;
+  justify-items: $justify;
+  align-items: $align;
+}
+
+// Border radius principal
+@mixin radius-main {
+  border-radius: $border-radius-main;
+}
+
+// Sombra principal
+@mixin shadow-main {
+  box-shadow: $box-shadow-main;
+}
+
+// Card base
+@mixin card-base {
+  background-color: map-get($colors, card-bg);
+  @include radius-main;
+  color: map-get($colors, text-dark);
+  padding: map-get($spacing, card-padding);
+  box-shadow: map-get($shadows, card);
+}
+
+// Card hover
+@mixin card-hover {
+  background-color: map-get($colors, card-hover-bg);
+  color: map-get($colors, text-light);
+  box-shadow: map-get($colors, card-hover-shadow);
+}
+
+// Botón base
+@mixin button-base {
+  background-color: map-get($colors, card-bg);
+  color: map-get($colors, text-dark);
+  border: none;
+  @include radius-main;
+  padding: 0.5rem 1rem;
+  font-size: map-get($font-sizes, base);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+// Media queries reutilizables
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (max-width: $breakpoint-tablet) { @content; }
+  }
+  @else if $breakpoint == mobile {
+    @media (max-width: $breakpoint-mobile) { @content; }
+  }
+}
+
+// Tamaño de iconos
+@mixin icon-size($icon) {
+  width: map-get($icon-sizes, $icon);
+  height: map-get($icon-sizes, $icon);
+}
+
+// Nombre modelos
+@mixin model-name($font-size: 1.2rem, $letter-spacing: 0.3rem, $text-transform: uppercase, $font-weight: 400, $padding: 0.5rem) {
+  font-size: $font-size;
+  letter-spacing: $letter-spacing;
+  text-transform: $text-transform;
+  font-weight: $font-weight;
+  padding: $padding;
+}
+
+// Img Modelos
+
+@mixin img-model($width: 100%, $height: auto, $border-radius: 0.55rem, $padding: 0.5rem) {
+  width: $width;
+  height: $height;
+  border-radius: $border-radius;
+  padding: $padding;
+}
+
+@mixin h2 ($color: $color-text-main, $font-size: $font-size-h2, $font-weight: 400, $text-align: center, $letter-spacing: 0.4rem, $text-transform: uppercase, $padding: $padding-section-h2) {
+  color: $color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  text-align: center;
+  letter-spacing: $letter-spacing;
+  text-transform: $text-transform;
+  padding: $padding;
+}

@@ -1,0 +1,64 @@
+// Paleta de colores agrupada
+$colors: (
+  bg-main: #222831,
+  bg-card: #393E46,
+  bg-heading: #9f9587,
+  bg-hr: #75787E,
+  bg-input: #e5e5e5,
+  text-main: #d9d9d9,
+  text-dark: #222831,
+  text-light: #ffffff,
+  text-accent: #9f9587,
+  text-secondary: #393e46da,
+  button-bg: #d9d9d9,
+  button-hover-bg: #9f958794,
+  button-hover-shadow: 1px 2px 8px #222831
+);
+
+$paddings: (
+  section: 2.5rem,
+  section-h2: 1.2rem,
+  list: 2.5rem,
+  card: 1.4rem,
+  nav-button-padding: .7rem 1rem,
+  card-gap: 1rem,
+  nav-gap: 1rem,
+);
+
+$spacings: (
+  h1: 0.2rem,
+  h2: 0.4rem,
+  h3: 0.3rem,
+  about-text: 1rem,
+  nav: 1rem,
+  accesories: 0.125rem
+
+);
+
+// Border radius
+$radius: (
+  main: 0.55rem
+);
+
+// Sombras
+$box-shadows: (
+  toggle: 1px 2px 8px #222831,
+  input: 0 1px 4px rgba(0,0,0,0.04)
+);
+
+// Font sizes
+$font-sizes: (
+  h1: 4.375rem,
+  h2: 2rem,
+  h3: 1.5rem,
+  base: 1rem,
+  nav: 2.5rem,
+  input: 0.8rem,
+  models: 1.1rem,
+);
+
+// Otros
+$icon-sizes: (
+  search: 1.6rem,
+  nav-account: 2rem
+);
