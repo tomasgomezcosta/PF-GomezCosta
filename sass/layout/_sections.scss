@@ -1,4 +1,4 @@
-// ...existing code...
+
 .about-section {
   background-color: #222831;
   justify-items: center;
@@ -48,38 +48,17 @@
   }
 }
 
+.bundles {
+  @include grid(repeat(3, 1fr), 2.5rem, 2.5rem, center, center);
+  background-color: $color-bg-dark;
+  padding: $padding-section;
+}
+
 .models-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 2.5rem;
-  row-gap: 2.5rem;
-  padding: 2.5rem;
-  justify-items: center;
-  align-items: center;
-  background-color: #222831;
+  @include grid(1fr 1fr 1fr, 2.5rem, 2.5rem, center, center);
+  background-color: $color-bg-dark;
 }
-
-.models {
-  background-color: #393E46;
-  border-radius: .55rem;
-  padding: 1.4rem;
-
-  h3 {
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: #d9d9d9;
-    padding-bottom: 0.5rem;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: .55rem;
-  }
-}
-
+  
 .model {
   background: #222831;
   padding: 2.5rem;
@@ -129,4 +108,40 @@
     border-radius: .55rem;
   }
 }
-// ...existing code...
+
+.cart-input { 
+  @include flex (row, center, center, 0);
+  background-color: $color-bg-dark;
+  padding: $padding-section;
+
+  div {
+    @include card-base
+  }
+
+  p {
+    color: map-get($colors, text-main);
+    font-size: map-get($font-sizes, base);
+    letter-spacing: map-get($spacings, p);
+  }
+}
+
+.cart-details {
+  @include grid (1fr 1fr, 2.5rem, center, center);
+  background-color: $color-bg-dark;
+  padding: map-get($paddings, section);
+  justify-items: center;
+}
+
+.items-list {
+  @include card-base;
+}
+
+.cart-summary {
+  @include card-base;
+
+  li {
+    font-size: map-get($font-sizes, base);
+    padding: map-get($paddings,card-gap);
+  }
+
+}

@@ -1,7 +1,7 @@
 // Mixins reutilizables y optimizados
 
 // Flexbox rápido
-@mixin flex($direction: row, $justify: center, $align: center, $gap: 0) {
+@mixin flex($direction: $direction, $justify: center, $align: center, $gap: 0) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
@@ -10,9 +10,10 @@
 }
 
 // Grid rápido
-@mixin grid($columns: 1fr, $gap: 2.5rem, $justify: space-between, $align: center ) {
+@mixin grid($columns: $columns, $padding: $paddings-section, $gap: 2.5rem, $justify: $justify, $align: center) {
   display: grid;
   grid-template-columns: $columns;
+  padding: $padding;
   gap: $gap;
   justify-items: $justify;
   align-items: $align;
@@ -30,11 +31,14 @@
 
 // Card base
 @mixin card-base {
-  background-color: map-get($colors, card-bg);
+  background-color: map-get($colors, bg-card);
+  @include flex(column, center, center, 0);
   @include radius-main;
-  color: map-get($colors, text-dark);
-  padding: map-get($spacing, card-padding);
-  box-shadow: map-get($shadows, card);
+  color: map-get($colors, text-main);
+  padding: map-get($paddings, card);
+  box-shadow: map-get($box-shadows, card);
+  width: 100%;
+  text-transform: uppercase;
 }
 
 // Card hover
@@ -74,12 +78,13 @@
 }
 
 // Nombre modelos
-@mixin model-name($font-size: 1.2rem, $letter-spacing: 0.3rem, $text-transform: uppercase, $font-weight: 400, $padding: 0.5rem) {
+@mixin model-name($font-size: 1.2rem, $letter-spacing: 0.3rem, $text-transform: uppercase, $font-weight: 400, $padding: 0.5rem, $color: $color-text-main) {
   font-size: $font-size;
   letter-spacing: $letter-spacing;
   text-transform: $text-transform;
   font-weight: $font-weight;
-  padding: $padding;
+  padding-bottom: $padding;
+  color: $color;
 }
 
 // Img Modelos

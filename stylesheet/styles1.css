@@ -108,6 +108,199 @@ footer .footer-bottom {
   padding: 1.2rem;
 }
 
+.about-section {
+  background-color: #222831;
+  justify-items: center;
+  padding: 2.5rem 2.5rem 0;
+}
+
+.about-text {
+  background-color: #393E46;
+  padding: 3.125rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  border-radius: 0.55rem;
+  color: #d9d9d9;
+  line-height: 1.5;
+}
+
+.account-section {
+  background-color: #222831;
+  padding: 2.5rem;
+  justify-items: center;
+}
+
+.account-input {
+  width: 100%;
+  padding: 3.125rem;
+  background-color: #393E46;
+  border-radius: 0.55rem;
+}
+.account-input label {
+  color: #d9d9d9;
+  text-transform: uppercase;
+  font-size: 0.9375rem;
+  letter-spacing: 0.125rem;
+}
+.account-input button {
+  background-color: #d9d9d9;
+  color: #222831;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.2rem 0.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.bundles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2.5rem;
+  gap: 2.5rem;
+  justify-items: center;
+  align-items: center;
+  background-color: #222831;
+  padding: 2.5rem;
+}
+
+.models-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 2.5rem;
+  gap: 2.5rem;
+  justify-items: center;
+  align-items: center;
+  background-color: #222831;
+}
+
+.model {
+  background: #222831;
+  padding: 2.5rem;
+}
+
+.models-detail {
+  display: flex;
+  gap: 2rem;
+  background: #393E46;
+  border-radius: 0.55rem;
+  padding: 2.5rem;
+  color: #d9d9d9;
+}
+
+.model-info {
+  color: #d9d9d9;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 3rem;
+}
+
+.accessories-section {
+  background-color: #222831;
+  padding: 2.5rem;
+  justify-items: center;
+}
+
+.fragances-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
+  padding: 2.5rem;
+  justify-items: center;
+  align-items: center;
+  background-color: #222831;
+}
+
+.fragances {
+  background-color: #393E46;
+  border-radius: 0.55rem;
+  padding: 2rem;
+}
+.fragances img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.55rem;
+}
+
+.cart-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: #222831;
+  padding: 2.5rem;
+}
+.cart-input div {
+  background-color: #393E46;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  border-radius: 0.55rem;
+  color: #d9d9d9;
+  padding: 1.4rem;
+  width: 100%;
+  text-transform: uppercase;
+}
+.cart-input p {
+  color: #d9d9d9;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.cart-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2.5rem;
+  gap: center;
+  justify-items: center;
+  align-items: center;
+  background-color: #222831;
+  padding: 2.5rem;
+  justify-items: center;
+}
+
+.items-list {
+  background-color: #393E46;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  border-radius: 0.55rem;
+  color: #d9d9d9;
+  padding: 1.4rem;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.cart-summary {
+  background-color: #393E46;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  border-radius: 0.55rem;
+  color: #d9d9d9;
+  padding: 1.4rem;
+  width: 100%;
+  text-transform: uppercase;
+}
+.cart-summary li {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+body {
+  background-color: #222831;
+}
+
 nav {
   position: relative;
   width: 100%;
@@ -242,7 +435,8 @@ nav {
 .bundles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  padding: 2.5rem;
+  gap: center;
   justify-items: center;
   align-items: center;
   background-color: #222831;
@@ -265,7 +459,8 @@ nav {
   letter-spacing: 0.3rem;
   text-transform: uppercase;
   font-weight: 400;
-  padding: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #d9d9d9;
 }
 .bundle img {
   width: 100%;
@@ -274,35 +469,31 @@ nav {
   padding: 0.5rem;
 }
 
-.models-section {
-  display: grid;
-  grid-template-columns: 3;
-  gap: 2.5rem;
-  justify-items: 2.5rem;
-  align-items: center;
-  background-color: #222831;
-}
-
-.models-card {
+.models {
   background-color: #393E46;
-  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
   border-radius: 0.55rem;
-  text-decoration: none;
-  text-align: center;
   color: #d9d9d9;
+  padding: 1.4rem;
+  width: 100%;
+  text-transform: uppercase;
 }
-.models-card:hover {
+.models:hover {
   background-color: rgba(159, 149, 135, 0.5803921569);
 }
-.models-card h3 {
+.models h3 {
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   font-weight: 400;
-  padding: 0.5rem;
+  padding-bottom: 0.5rem;
   color: #d9d9d9;
 }
-.models-card img {
+.models img {
   width: 100%;
   height: auto;
   border-radius: 0.55rem;
@@ -327,132 +518,6 @@ nav {
 }
 .items-list li:last-child {
   border-bottom: none;
-}
-
-.about-section {
-  background-color: #222831;
-  justify-items: center;
-  padding: 2.5rem 2.5rem 0;
-}
-
-.about-text {
-  background-color: #393E46;
-  padding: 3.125rem;
-  font-size: 1.25rem;
-  text-transform: uppercase;
-  letter-spacing: 0.125rem;
-  border-radius: 0.55rem;
-  color: #d9d9d9;
-  line-height: 1.5;
-}
-
-.account-section {
-  background-color: #222831;
-  padding: 2.5rem;
-  justify-items: center;
-}
-
-.account-input {
-  width: 100%;
-  padding: 3.125rem;
-  background-color: #393E46;
-  border-radius: 0.55rem;
-}
-.account-input label {
-  color: #d9d9d9;
-  text-transform: uppercase;
-  font-size: 0.9375rem;
-  letter-spacing: 0.125rem;
-}
-.account-input button {
-  background-color: #d9d9d9;
-  color: #222831;
-  border: none;
-  border-radius: 0.2rem;
-  padding: 0.2rem 0.5rem;
-  margin-left: 1rem;
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-}
-
-.models-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 2.5rem;
-  row-gap: 2.5rem;
-  padding: 2.5rem;
-  justify-items: center;
-  align-items: center;
-  background-color: #222831;
-}
-
-.models {
-  background-color: #393E46;
-  border-radius: 0.55rem;
-  padding: 1.4rem;
-}
-.models h3 {
-  font-size: 1rem;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #d9d9d9;
-  padding-bottom: 0.5rem;
-}
-.models img {
-  width: 100%;
-  height: auto;
-  border-radius: 0.55rem;
-}
-
-.model {
-  background: #222831;
-  padding: 2.5rem;
-}
-
-.models-detail {
-  display: flex;
-  gap: 2rem;
-  background: #393E46;
-  border-radius: 0.55rem;
-  padding: 2.5rem;
-  color: #d9d9d9;
-}
-
-.model-info {
-  color: #d9d9d9;
-  text-align: left;
-  font-size: 1.1rem;
-  line-height: 3rem;
-}
-
-.accessories-section {
-  background-color: #222831;
-  padding: 2.5rem;
-  justify-items: center;
-}
-
-.fragances-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 2.5rem;
-  row-gap: 2.5rem;
-  padding: 2.5rem;
-  justify-items: center;
-  align-items: center;
-  background-color: #222831;
-}
-
-.fragances {
-  background-color: #393E46;
-  border-radius: 0.55rem;
-  padding: 2rem;
-}
-.fragances img {
-  width: 100%;
-  height: auto;
-  border-radius: 0.55rem;
 }
 
 /*# sourceMappingURL=styles1.css.map */
