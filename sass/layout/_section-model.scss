@@ -1,0 +1,24 @@
+
+.model {
+    padding: 2.5rem 2.5rem 0;
+}
+
+.models-detail {
+    @include card-base;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: normal;
+    align-items: normal;
+
+    
+
+}
+
+.model-info {
+    color: map-get($colors, text-main);
+    text-align: left;
+    font-size: map-get($font-sizes, models);
+    line-height: 3rem;
+    text-transform: uppercase;
+    letter-spacing: map-get($spacings, p);
+}

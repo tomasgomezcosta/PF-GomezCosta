@@ -1,0 +1,6 @@
+// Models Section
+.models-section {
+    @include grid(1fr 1fr 1fr, 2.5rem, 2.5rem);
+    background-color: $color-bg-dark;
+    padding: map-get($paddings, section);
+}

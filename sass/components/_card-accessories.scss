@@ -1,0 +1,18 @@
+.accessories-list {
+    @include card-base;
+    letter-spacing: map-get($spacings, a);
+    line-height: 1.5rem;
+    text-align: left;
+    align-items: stretch;
+    
+
+        li {
+        padding: 1rem 0;
+        border-bottom: map-get($border-bottom, main);
+        }
+
+            li:last-child {
+            border-bottom: none;
+            }
+
+}

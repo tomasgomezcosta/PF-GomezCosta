@@ -11,7 +11,18 @@
 @import './layout/header';
 @import './layout/footer';
 @import './layout/main';
-@import './layout/sections';
+@import './layout/section-bundles';
+@import './layout/section-fragances';
+@import './layout/section-models';
+@import './layout/section-account';
+@import './layout/section-accessories';
+@import './layout/section-cart';
+@import './layout/section-about';
+@import './layout/section-model';
+
+
+
+//@import './layout/sections';
 @import './layout/body';
 @import './layout/media/media320';
 @import './layout/media/media450';
@@ -19,6 +30,16 @@
 // COMPONENTS
 @import './components/navbar';
 @import './components/card';
+@import './components/card-bundles';
+@import './components/card-fragances';
+@import './components/card-models';
+@import './components/card-accessories';
+@import './components/button';
+@import './components/card-cart';
+@import './components/card-about';
+@import './components/card-account';
+
+
 
 // MQ
 @import './layout/media/media320';

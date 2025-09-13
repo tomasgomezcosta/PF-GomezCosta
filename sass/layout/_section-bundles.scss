@@ -1,0 +1,6 @@
+// Bundles Section
+.bundles {
+    @include grid(repeat(3, 1fr), 2.5rem, 2.5rem);
+    background-color: $color-bg-dark;
+    padding: map-get($paddings, section);
+}

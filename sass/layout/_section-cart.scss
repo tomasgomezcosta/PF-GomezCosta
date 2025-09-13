@@ -1,0 +1,36 @@
+.cart-input {
+    display: flex;
+    justify-content: center;
+    padding: map-get($paddings, section);
+    text-align: center;
+
+    div {
+        background-color: map-get($colors, bg-card);
+        color: map-get($colors, text-main);
+        text-transform: uppercase;
+        height: auto;
+        width: 100%;
+        padding: 4rem;
+        border-radius: $border-radius-main;
+    }
+
+        p {
+            font-size: map-get($font-sizes, p);
+            letter-spacing: map-get($spacings, p);
+            margin-bottom: 2rem;
+        }
+}
+
+.cart-details {
+    @include grid (1fr 1fr, 2.5rem, 2.5rem);
+    padding: map-get($paddings, section);
+
+    .items-list {
+        @include card-base;
+        padding: map-get($paddings, cart-summary);
+    }
+    .cart-summary {
+        @include card-base;
+        padding: map-get($paddings, cart-summary);
+    }
+}

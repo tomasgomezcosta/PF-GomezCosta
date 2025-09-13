@@ -1,0 +1,10 @@
+.about-text {
+    background-color: #393E46;
+    padding: map-get($paddings, about-text);
+    font-size: map-get($font-sizes, about);
+    text-transform: uppercase;
+    letter-spacing: map-get($spacings, a);
+    border-radius: $border-radius-main;
+    color: map-get($colors, text-main);
+    line-height: 1.5;
+}

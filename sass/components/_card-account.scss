@@ -1,0 +1,28 @@
+.account-input {
+    width: 100%;
+    padding: map-get($paddings, section);
+    background-color: map-get($colors, bg-card);
+    border-radius: map-get($radius, main);
+
+    form {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.account-input label {
+    color: map-get($colors, text-main);
+    text-transform: uppercase;
+    font-size: map-get($font-sizes, input);
+    letter-spacing: map-get($spacings, a);
+}
+
+.account-input button {
+    background-color: map-get($colors, button-bg);
+    color: map-get($colors, text-dark);
+    border: none;
+    border-radius: map-get($radius, main);
+    padding: 0.2rem 0.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
