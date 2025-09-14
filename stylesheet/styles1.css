@@ -45,6 +45,31 @@ body {
   font-weight: 500;
 }
 
+.scale-up-center {
+  -webkit-animation: scale-up-center 1000ms ease-in both;
+  animation: scale-up-center 1000ms ease-in both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
 footer {
   color: #d9d9d9;
   text-align: center;
