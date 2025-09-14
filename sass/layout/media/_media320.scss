@@ -1,18 +1,25 @@
-@media (max-width: 320px) {
-    .header-section {
-        padding: 1rem;
+@include respond-to(mobile-S) {
+
+// HEADER
+.header-section {
+    padding: 1rem;
+    h1 {
+        a {
+            font-size: 1.5rem;
+            letter-spacing: 0.04rem;
+        }
     }
-    .header-section h1 a {
-        font-size: 1.2rem;
-        letter-spacing: 0.2rem;
-    }
-    .nav-menu a {
+}
+
+// NAVBAR
+.nav-menu {
+    a {
         font-size: 0.70rem;
         padding: 0rem;
         justify-content: center;
         border-radius: 0.3rem;
     }
-    .nav-menu.active {
+    &.active {
         position: absolute;
         align-items: center;
         padding: 0.2rem;
@@ -20,36 +27,57 @@
         gap: 0.6rem;
         height: 10rem;
     }
-    .bundles {
-        gap: 1rem;
-        padding: 1rem;
-    }
-    .headings h2 {
-        font-size: 1.2rem;
-        letter-spacing: 0.1rem;
-        padding: 0.9rem;
-    }
-    .fragances {
-        grid-template-columns: 1fr;
-        row-gap: 1rem;
-        padding: 1rem;
-    }
+}
+
+// FOOTER
+footer {   
     .footer-container {
         grid-template-columns: 1fr;
         row-gap: 1rem;
         padding: 1rem;
     }
-    .models-group {
-        grid-template-columns: 1fr;
-        row-gap: 1rem;
-        padding: 1rem;
+}
+
+// BUNDLES
+.bundles {
+    gap: 1rem;
+    padding: 1rem;
+}
+
+// HEADINGS
+.section-headings {
+    h2 {
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
+        padding: 0.9rem;
     }
-    .about-text {
-        padding: 1rem;
-        font-size: 0.8rem;
-    }
-    .account-input {
-        padding: 1rem;
-        font-size: 1rem;
-    }
+}
+
+// FRAGANCES
+.fragances {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    padding: 1rem;
+}
+
+// MODELS
+.models-section {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    padding: 1rem;
+}
+
+// ABOUT
+.about-text {
+    padding: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.01rem;
+    text-align: center;
+}
+
+// ACCOUNT
+.account-input {
+    padding: 1rem;
+    font-size: 1rem;
+}
 }

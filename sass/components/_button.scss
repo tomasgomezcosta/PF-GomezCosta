@@ -2,20 +2,20 @@
   display: none;
   background: none;
   border: none;
-  font-size: 2.5rem;
-  color: #d9d9d9;
+  font-size: map-get($font-sizes, nav);
+  color: $color-text-main;
   cursor: pointer;
   z-index: 1000;
 }
 
 .cart-summary button {
-    background-color: #d9d9d9;
-    color: #222831;
+    background-color: $color-bg-input;
+    color: $color-bg-dark;
     border: none;
     border-radius: 0.2rem;
-    padding: 0.5rem 1rem;
+    padding: map-get($paddings, nav-search-acc-cart);
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: map-get($font-sizes, base);
     text-transform: uppercase;
     cursor: pointer;
 }

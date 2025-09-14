@@ -58,14 +58,12 @@
 }
 
 // Tamaño de iconos
-
 @mixin icon-size($width, $height) {
   width: $width;
   height: $height;
 }
 
 // Nombre modelos
-
 @mixin model-name($font-size: 1.2rem, $letter-spacing: 0.3rem, $text-transform: uppercase, $font-weight: 400, $padding: 0.5rem, $color: $color-text-main) {
   font-size: $font-size;
   letter-spacing: $letter-spacing;
@@ -76,7 +74,6 @@
 }
 
 // Img Modelos
-
 @mixin img-model($width: 100%, $height: auto, $border-radius: 0.55rem, $padding: 0.5rem) {
   width: $width;
   height: $height;
@@ -96,7 +93,6 @@
 
 
 // Nav //
-
 @mixin nav-a {
         display: flex;
         color: map-get($colors, text-dark);
@@ -115,9 +111,7 @@
 }
 
 
-// Media queries reutilizables
-
-
+// Media queries
 @mixin respond-to($breakpoint) {
   @if $breakpoint == desktop {
     @media (max-width: $breakpoint-desktop) { @content; }

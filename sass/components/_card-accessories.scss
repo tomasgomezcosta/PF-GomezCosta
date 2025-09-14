@@ -4,15 +4,11 @@
     line-height: 1.5rem;
     text-align: left;
     align-items: stretch;
-    
-
-        li {
-        padding: 1rem 0;
-        border-bottom: map-get($border-bottom, main);
-        }
-
-            li:last-child {
-            border-bottom: none;
-            }
-
+    li {
+    padding: 1rem 0;
+    border-bottom: map-get($border-bottom, main);
+    }
+    li:last-child {
+    border-bottom: none;
+    }
 }

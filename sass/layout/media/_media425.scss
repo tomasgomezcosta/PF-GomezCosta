@@ -6,59 +6,36 @@
     padding: 1rem;
         h1 {
             a {
-                font-size: 1.2rem;
+                font-size: 1.7rem;
                 letter-spacing: 0.2rem;
             }
         }
     }
 
-
+// NAVBAR
 nav {
     padding: 0.5rem;
 
-        .nav-toggle {
-            font-size: 1.7rem;
-        }
-        .search-toggle {
-            padding: 0.4rem;
-        }
-        .icon-search {
+    .nav-toggle {
+        font-size: 1.7rem;
+    }
+    .search-toggle {
+        padding: 0.4rem;
+    }
+    .icon-search {
         width: 1.2rem;
         height: 1.2rem;
-        }
-        .nav-account {
-            li {
-                a {
-                    padding: 0.15rem 0.4rem;
-                }
+    }
+    .nav-account {
+        li {
+            a {
+                padding: 0.15rem 0.4rem;
             }
         }
-        .svg {
-            width: 1.5rem;
-            height: 1.5rem;
-        }
     }
-
-// BUNDLES
-.collections {
-    h2 {
-        font-size: 1rem;
-        letter-spacing: 0.1rem;
-        padding: 1rem;
-    }
-}
-
-.bundles {
-    grid-template-columns: 1fr;
-    gap: 1.4rem;
-    padding: 1.2rem 1.2rem 0;
-
-    .bundle {
-        h3 {
-            font-size: 1rem;
-            letter-spacing: 0.2rem;
-            font-weight: 600;
-        }
+    .svg {
+        width: 1.5rem;
+        height: 1.5rem;
     }
 }
 
@@ -89,8 +66,31 @@ footer {
     line-height: 1rem;
 }
 
+// BUNDLES
+.collections {
+    h2 {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        padding: 1rem;
+    }
+}
+
+.bundles {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+    padding: 1.2rem;
+
+    .bundle {
+        h3 {
+            font-size: 1rem;
+            letter-spacing: 0.2rem;
+            font-weight: 600;
+        }
+    }
+}
+
 // HEADINGS
-.headings {
+.section-headings {
     h2 {
         font-size: 1.2rem;
         letter-spacing: 0.2rem;
@@ -101,12 +101,6 @@ footer {
 .models-section {
     grid-template-columns: 1fr;
     gap: 1.2rem;
-    padding: 1.2rem;
-}
-
-.models-group {
-    grid-template-columns: 1fr;
-    row-gap: 1.2rem;
     padding: 1.2rem;
 }
 
@@ -173,12 +167,13 @@ footer {
 
 // ACCOUNT
 .account-section {
-    .account-input form{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: stretch;
-        justify-content: space-between;
+    padding: 1.2rem;
+        .account-input form{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: stretch;
+            justify-content: space-between;
+        }
     }
-}
 }

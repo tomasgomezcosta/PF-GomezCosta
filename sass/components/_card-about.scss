@@ -1,5 +1,5 @@
 .about-text {
-    background-color: #393E46;
+    background-color: map-get($colors, bg-card);
     padding: map-get($paddings, about-text);
     font-size: map-get($font-sizes, about);
     text-transform: uppercase;

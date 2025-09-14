@@ -19,9 +19,6 @@ nav {
 .nav-account {
   display: flex;
   gap: .625rem;
-  
-
-
     svg {
       width: map-get($icon-sizes, nav-account);
       height: map-get($icon-sizes, nav-account);
@@ -42,24 +39,24 @@ nav {
   cursor: pointer;
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 
-  &:hover {
-    background-color: map-get($colors, button-hover-bg);
-    color: map-get($colors, text-light);
-    box-shadow: map-get($box-shadows, toggle);
-  }
+    &:hover {
+      background-color: map-get($colors, button-hover-bg);
+      color: map-get($colors, text-light);
+      box-shadow: map-get($box-shadows, toggle);
+    }
 
-  .icon-search {
-  @include icon-size (1.6rem, 1.6rem);
-  stroke: map-get($colors, icon-search);
-  fill: none;
-  stroke-width: 2;
-}
+    .icon-search {
+    @include icon-size (1.6rem, 1.6rem);
+    stroke: map-get($colors, icon-search);
+    fill: none;
+    stroke-width: 2;
+  }
 }
 
 .search-input {
   width: 0;
   border: none;
-  border-radius: 0.55rem;
+  border-radius: $border-radius-main;
   background: map-get($colors, bg-input);
   color: map-get($colors, navbar-bg);
   font-size: map-get($font-sizes, input);
