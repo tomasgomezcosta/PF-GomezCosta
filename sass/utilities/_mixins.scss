@@ -113,3 +113,22 @@
           box-shadow: map-get($box-shadows, toggle);
         }
 }
+
+
+// Media queries reutilizables
+
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == desktop {
+    @media (max-width: $breakpoint-desktop) { @content; }
+  }
+  @else if $breakpoint == tablet {
+    @media (max-width: $breakpoint-tablet) { @content; }
+  }
+  @else if $breakpoint == mobile-L {
+    @media (max-width: $breakpoint-mobile-L) { @content; }
+  }
+  @else if $breakpoint == mobile-S {
+    @media (max-width: $breakpoint-mobile-S) { @content; }
+  }
+}

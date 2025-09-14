@@ -8,6 +8,7 @@
 @import './base/fonts';
 
 // LAYOUT
+@import './layout/body';
 @import './layout/header';
 @import './layout/footer';
 @import './layout/main';
@@ -20,16 +21,8 @@
 @import './layout/section-about';
 @import './layout/section-model';
 
-
-
-//@import './layout/sections';
-@import './layout/body';
-@import './layout/media/media320';
-@import './layout/media/media450';
-
 // COMPONENTS
 @import './components/navbar';
-@import './components/card';
 @import './components/card-bundles';
 @import './components/card-fragances';
 @import './components/card-models';
@@ -39,8 +32,8 @@
 @import './components/card-about';
 @import './components/card-account';
 
-
-
 // MQ
 @import './layout/media/media320';
-@import './layout/media/media450';
+@import './layout/media/media425';
+@import './layout/media/media768';
+@import './layout/media/media1024';

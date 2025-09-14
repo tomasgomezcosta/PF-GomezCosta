@@ -1,0 +1,184 @@
+
+@include respond-to(mobile-L) {
+
+// HEADER
+.header-section {
+    padding: 1rem;
+        h1 {
+            a {
+                font-size: 1.2rem;
+                letter-spacing: 0.2rem;
+            }
+        }
+    }
+
+
+nav {
+    padding: 0.5rem;
+
+        .nav-toggle {
+            font-size: 1.7rem;
+        }
+        .search-toggle {
+            padding: 0.4rem;
+        }
+        .icon-search {
+        width: 1.2rem;
+        height: 1.2rem;
+        }
+        .nav-account {
+            li {
+                a {
+                    padding: 0.15rem 0.4rem;
+                }
+            }
+        }
+        .svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+
+// BUNDLES
+.collections {
+    h2 {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        padding: 1rem;
+    }
+}
+
+.bundles {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+    padding: 1.2rem 1.2rem 0;
+
+    .bundle {
+        h3 {
+            font-size: 1rem;
+            letter-spacing: 0.2rem;
+            font-weight: 600;
+        }
+    }
+}
+
+// FOOTER
+footer {
+    .footer-container {
+        grid-template-columns: 1fr;
+        row-gap: 1.2rem;
+        padding: 0rem 1.2rem 1.2rem;
+
+        .footer-column {
+            h3 {
+                font-size: 1rem;
+                letter-spacing: 0.2rem;
+            }
+            a {
+                font-size: 0.8rem;
+                letter-spacing: 0.1rem;
+                line-height: 1.3rem;
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    font-size: 0.6rem;
+    letter-spacing: 0.13rem;
+    line-height: 1rem;
+}
+
+// HEADINGS
+.headings {
+    h2 {
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+    }
+}
+
+// MODELS
+.models-section {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding: 1.2rem;
+}
+
+.models-group {
+    grid-template-columns: 1fr;
+    row-gap: 1.2rem;
+    padding: 1.2rem;
+}
+
+.model {
+    padding: 1.2rem;
+    font-size: 0.9rem;
+}
+
+.models-detail {
+    padding: 1.2rem;
+    font-size: 0.9rem;
+}
+
+.models {
+    h3 {
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+}
+
+.model-info {
+    h3 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: 1px solid #c0b2a3;
+    }
+    p {
+        margin-top: 1rem;
+        font-size: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+// CART
+.cart-details {
+    grid-template-columns: 1fr;
+    row-gap: 1.2rem;
+    padding: 1.2rem;
+}
+
+// FRAGANCES
+.fragances-section {
+    grid-template-columns: 1fr;
+    row-gap: 1.2rem;
+    padding: 1.2rem;
+}
+
+// ACCESSORIES
+.accessories-section {
+    padding: 1.2rem;
+}
+
+// ABOUT
+.about-section {
+    padding: 1.2rem;
+}
+
+.about-text {
+    padding: 1.2rem;
+    font-size: 0.9rem;
+}
+
+// ACCOUNT
+.account-section {
+    .account-input form{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: stretch;
+        justify-content: space-between;
+    }
+}
+}

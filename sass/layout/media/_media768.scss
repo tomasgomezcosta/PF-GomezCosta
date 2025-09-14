@@ -1,0 +1,217 @@
+@include respond-to(tablet) {
+  // HEADER
+.header-section {
+    h1 {
+        a {
+            font-size: 2rem;
+            letter-spacing: 0.3rem;
+            padding-bottom: 0.35em;
+            padding-top: 0.35em;
+        }
+    }
+}
+
+.collections {
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+// BUNDLES
+.bundles {
+    gap: 1.3rem;
+    padding: 1.3rem;
+
+    .bundle {
+        h3 {
+            font-size: 0.8rem;
+            letter-spacing: 0.1rem;
+            height: auto;
+        }
+        a {
+            letter-spacing: 1rem;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+// NAVBAR
+nav {
+    ul {
+        li {
+            width: 90%;
+        }
+    }
+    .nav-menu {
+        &.active {
+            position: absolute;
+            align-items: center;
+            padding: 0.2rem;
+            width: 15rem;
+            gap: 0.6rem;
+            height: 18rem;
+        }
+        a {
+            font-size: 0.9rem;
+            padding: 0.179rem;
+            max-width: 15rem;
+            justify-content: center;
+            border-radius: 0.3rem;
+        }
+    }
+}
+
+.search-form {
+    gap: 0.7rem;
+    width: 90%;
+}
+
+  // FOOTER
+
+footer {
+
+    .footer-container {
+        gap: 1.3rem;
+        padding: 1.3rem;
+        margin-bottom: 0;
+    
+        .footer-column {
+            padding: .8375rem 1rem;
+
+            h3 {
+                font-size: 0.7rem;
+                letter-spacing: 0.08rem;
+            }
+            a {
+                font-size: 0.7rem;
+                letter-spacing: 0.05rem;
+                line-height: 1rem;
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    font-size: 0.5rem;
+}
+
+  // HEADINGS
+.headings {
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+  // MODELS
+.models-group {
+        grid-template-columns: 1fr;
+        row-gap: 1.5rem;
+        padding: 1.5rem;
+}
+.models-detail {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+.model-info {
+        text-align: center;
+    }
+.models {
+    width: 100%;
+    padding: 1rem;
+
+    h3 {
+        font-size: 0.7rem;
+        letter-spacing: 0.08rem;
+    }
+}
+.models-section {
+    gap: 1.3rem;
+    padding: 1.3rem;
+}
+
+.model {
+    padding: 1.3rem 1.3rem 0;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.03rem;
+}
+
+// FRAGANCES
+.fragances-section {
+    gap: 1.3rem;
+    padding: 1.3rem;
+    }
+.fragances {
+        padding: 1rem;
+}
+
+// ABOUT
+.about-section {
+    padding: 1.3rem 1.3rem 0;
+}
+.about-text {
+    padding: 1.3rem;
+    font-size: 1rem;
+    letter-spacing: 0rem;
+    text-align: justify;
+}
+
+// ACCOUNT
+.account-section {
+    padding: 1.3rem 1.3rem 0;
+}
+.account-input {
+    padding: 2.5rem;
+    label {
+        font-size: 0.7rem;
+        letter-spacing: 0.1rem;
+    }
+}
+
+// CART
+.cart-input {
+    padding: 1.3rem 1.3rem 0;
+
+    div {
+        padding: 2rem;
+    }
+    p {
+        font-size: 0.8rem;
+        letter-spacing: 0.03rem;
+        margin-bottom: 1.5rem;
+    }
+    label {
+        font-size: 0.8rem;
+        letter-spacing: 0.03rem;
+    }
+}
+.cart-details {
+    padding: 1.3rem 1.3rem 0;
+    gap: 1.3rem;
+}
+.items-list {
+    justify-content: center;
+
+    li {
+        font-size: 1rem;
+        padding: 0.8rem 0;
+    }
+}
+.cart-summary {
+    padding: 1.3rem 1.3rem;
+}
+
+// ACCESSORIES
+.accessories-section {
+    padding: 1.3rem 1.3rem 0;
+}
+.accessories-list {
+    padding: 1.3rem 1.3rem;
+    font-size: 1rem;
+}
+}

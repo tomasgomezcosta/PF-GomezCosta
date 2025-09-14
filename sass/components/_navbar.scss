@@ -8,7 +8,7 @@ nav {
     @include flex (row, center, center);
     gap: 1rem;
     }
-    
+
       a {
         @include nav-a
       }
