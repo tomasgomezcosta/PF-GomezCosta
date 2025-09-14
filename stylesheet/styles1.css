@@ -483,7 +483,7 @@ nav a:hover {
 
 .account-input {
   width: 100%;
-  padding: 2.5rem 2.5rem 0;
+  padding: 2.5rem;
   background-color: #393E46;
   border-radius: 0.55rem;
 }
@@ -604,7 +604,7 @@ nav a:hover {
   }
   .bundles {
     gap: 1.3rem;
-    padding: 1.3rem;
+    padding: 1.3rem 1.3rem 0;
   }
   .bundles .bundle h3 {
     font-size: 0.8rem;
@@ -643,7 +643,7 @@ nav a:hover {
   .models-section {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.3rem;
-    padding: 1.3rem;
+    padding: 1.3rem 1.3rem 0;
   }
   .model {
     padding: 1.3rem 1.3rem 0;
@@ -653,7 +653,7 @@ nav a:hover {
   }
   .fragances-section {
     gap: 1.3rem;
-    padding: 1.3rem;
+    padding: 1.3rem 1.3rem 0;
   }
   .fragances {
     padding: 1rem;

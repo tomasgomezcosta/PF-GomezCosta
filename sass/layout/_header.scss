@@ -9,7 +9,7 @@
     a {
       color: map-get($colors, text-main);
       text-decoration: none;
-      font-size: 4.375rem;
+      font-size: $font-size-h1;
       letter-spacing: 0.2rem;
       font-weight: 500;
     }

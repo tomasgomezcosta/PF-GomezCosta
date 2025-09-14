@@ -84,7 +84,7 @@ footer {
 // BUNDLES
 .bundles {
     gap: 1.3rem;
-    padding: 1.3rem;
+    padding: 1.3rem 1.3rem 0;
     .bundle {
         h3 {
             font-size: 0.8rem;
@@ -132,7 +132,7 @@ footer {
 .models-section {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.3rem;
-    padding: 1.3rem;
+    padding: 1.3rem 1.3rem 0;
 }
 
 .model {
@@ -145,7 +145,7 @@ footer {
 // FRAGANCES
 .fragances-section {
     gap: 1.3rem;
-    padding: 1.3rem;
+    padding: 1.3rem 1.3rem 0;
 }
 
 .fragances {

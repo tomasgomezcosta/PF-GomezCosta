@@ -1,6 +1,6 @@
 .account-input {
     width: 100%;
-    padding: map-get($paddings, section);
+    padding: map-get($paddings, account);
     background-color: map-get($colors, bg-card);
     border-radius: map-get($radius, main);
 
