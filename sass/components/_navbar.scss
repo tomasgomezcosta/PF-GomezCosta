@@ -22,7 +22,11 @@ nav {
     svg {
       width: map-get($icon-sizes, nav-account);
       height: map-get($icon-sizes, nav-account);
-  }
+
+        &:hover {
+        stroke: map-get($colors, text-main);
+      }
+    }
 }
 
 .search-form {

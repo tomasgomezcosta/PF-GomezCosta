@@ -30,14 +30,14 @@
 // Card hover
 @mixin card-hover {
   background-color: map-get($colors, card-hover-bg);
-  color: map-get($colors, text-light);
+  color: map-get($colors, text-main);
   box-shadow: map-get($colors, card-hover-shadow);
 }
 
 // Botón base
 @mixin button-base {
   background-color: map-get($colors, card-bg);
-  color: map-get($colors, text-dark);
+  color: map-get($colors, text-main);
   border: none;
   border-radius: $border-radius-main;
   padding: 0.5rem 1rem;
@@ -102,10 +102,11 @@
         border-radius: $border-radius-main;
         padding: map-get($paddings, nav-search-acc-cart);
         transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+
         &:hover {
           background-color: map-get($colors, button-hover-bg);
           color: map-get($colors, text-light);
-          font-weight: 900;
+          font-weight: 400;
           box-shadow: map-get($box-shadows, toggle);
         }
 }
