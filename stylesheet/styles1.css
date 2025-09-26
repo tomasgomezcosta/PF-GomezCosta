@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Tenor Sans", sans-serif;
-  font-display: swap;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 a {
@@ -22,10 +24,6 @@ hr {
   background-color: #75787E;
 }
 
-@font-face {
-  font-family: "Tenor Sans";
-  src: url(../../assets/typo/TenorSans-Regular.ttf);
-}
 body {
   background-color: #222831;
 }
@@ -96,9 +94,10 @@ footer .footer-container .footer-column h3 {
 }
 footer .footer-container .footer-column a {
   color: #d9d9d9;
-  line-height: 1.4rem;
+  line-height: 2rem;
   font-size: 0.8rem;
   letter-spacing: 0.125rem;
+  padding: 0.5rem;
 }
 footer .footer-bottom {
   background-color: #393E46;

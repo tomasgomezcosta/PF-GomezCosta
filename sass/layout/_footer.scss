@@ -21,9 +21,10 @@ footer {
 
       a {
         color: map-get($colors, text-main);
-        line-height: 1.4rem;
+        line-height: 2rem;
         font-size: 0.8rem;
         letter-spacing: map-get($spacings, a);
+        padding: 0.5rem;
       }
     }
   }

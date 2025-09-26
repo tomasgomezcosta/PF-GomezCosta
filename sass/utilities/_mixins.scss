@@ -74,7 +74,7 @@
 }
 
 // Img Modelos
-@mixin img-model($width: 100%, $height: auto, $border-radius: 0.55rem, $padding: 0.5rem) {
+@mixin img-model($width: 80%, $height: auto, $border-radius: 0.55rem, $padding: 0.5rem) {
   width: $width;
   height: $height;
   border-radius: $border-radius;
