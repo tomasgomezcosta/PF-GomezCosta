@@ -4,17 +4,31 @@
     background-color: map-get($colors, bg-card);
     border-radius: map-get($radius, main);
 
-    form {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-.account-input label {
+    label {
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0.8rem;
     color: map-get($colors, text-main);
     text-transform: uppercase;
     font-size: map-get($font-sizes, input);
     letter-spacing: map-get($spacings, a);
+    }
+    input {
+        width: 20%;
+        border: none;
+        border-radius: map-get($radius, main);
+        background: map-get($colors, bg-input);
+        color: map-get($colors, navbar-bg);
+        font-size: map-get($font-sizes, input);
+        text-align: center;
+        box-shadow: map-get($box-shadows, input);
+        outline: none;
+    }   
+
+    form {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .account-input button {
@@ -22,7 +36,7 @@
     color: map-get($colors, text-dark);
     border: none;
     border-radius: map-get($radius, main);
-    padding: 0.2rem 0.5rem;
-    margin-left: 1rem;
+    padding: 0.3rem 0.8rem;
+    margin-left: 2rem;
     cursor: pointer;
 }

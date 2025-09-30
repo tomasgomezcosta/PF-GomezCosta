@@ -26,6 +26,7 @@ nav {
     }
     .nav-menu.active {
         display: flex;
+        align-items: stretch;
     }
     .nav-menu a {
         display: flex;

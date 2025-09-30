@@ -13,7 +13,7 @@ footer {
 
       h3 {
         letter-spacing: map-get($spacings, h3);
-        font-size: $font-size-h3;
+        font-size: map-get($font-sizes, h3);
         margin-bottom: 0.8rem;
         border-bottom: map-get($border-bottom, main);
         padding: 0.5625rem;
